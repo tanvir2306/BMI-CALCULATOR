@@ -20,7 +20,6 @@
         app:cardElevation="40dp"
         app:cardCornerRadius="20dp"
         app:cardMaxElevation="60dp"
-
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -33,7 +32,7 @@
                 android:id="@+id/Log1"
                 android:layout_width="364dp"
                 android:layout_height="46dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="Weight"
                 android:textAlignment="center"
@@ -73,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="80dp"
+        android:layout_marginVertical="40dp"
         app:cardBackgroundColor="#97CFF0"
         app:cardElevation="40dp"
         app:cardCornerRadius="20dp"
@@ -119,7 +118,6 @@
                 android:text="Cm"
                 android:textSize="21sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@id/edit2"
                 app:layout_constraintTop_toBottomOf="@id/Log2" />
 
@@ -140,11 +138,12 @@
         app:layout_constraintTop_toBottomOf="@id/cardView2"/>
 
     <androidx.cardview.widget.CardView
+        android:visibility="visible"
         android:id="@+id/cardView3"
         android:layout_width="330dp"
         android:layout_height="135dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="40dp"
         android:layout_marginTop="348dp"
         app:cardBackgroundColor="#97CFF0"
         app:cardCornerRadius="20dp"
@@ -162,29 +161,32 @@
                 android:id="@+id/Log3"
                 android:layout_width="364dp"
                 android:layout_height="46dp"
+                android:textColor="#DC8131"
                 android:layout_marginTop="4dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:text="38.19"
+                android:hint=" "
                 android:textAlignment="center"
                 android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/edit3"
                 android:layout_width="362dp"
                 android:layout_height="93dp"
-                android:layout_marginTop="12dp"
-                android:text="obese"
+                android:layout_marginTop="8dp"
+                android:hint=" "
+                android:textColor="#F21616"
                 android:textAlignment="center"
                 android:textSize="21sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
                 app:layout_constraintStart_toStartOf="@+id/Log3"
-                app:layout_constraintTop_toBottomOf="@+id/Log3" />
+                app:layout_constraintTop_toBottomOf="@+id/Log3"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/text3"
@@ -192,16 +194,31 @@
                 android:layout_height="36dp"
                 android:layout_marginTop="52dp"
                 android:layout_marginEnd="16dp"
-                android:text="(obese range is greater than 29.99)"
+                android:hint=" "
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@id/Log3"
-                app:layout_constraintTop_toBottomOf="@id/Log3" />
+                app:layout_constraintEnd_toEndOf="@id/edit3"
+                app:layout_constraintStart_toStartOf="@id/edit3"
+                app:layout_constraintTop_toBottomOf="@id/edit3"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="362dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        android:text="BMI CALCULATOR "
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_goneMarginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 
 
